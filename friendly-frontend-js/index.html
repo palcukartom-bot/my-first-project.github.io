@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Мой сайт By uglyfacekid</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <style>
         body {
             margin: 0;
@@ -17,6 +19,15 @@
             padding: 20px;
             font-size: 28px;
             background: rgba(0,0,0,0.4);
+        }
+
+        .hero {
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #8A2BE2, #4B0082);
         }
 
         .tabs button {
@@ -77,6 +88,12 @@
 
 <body>
 
+<!-- HERO -->
+<section class="hero">
+    <h1>Цитаты из фильмов</h1>
+    <p>Лучшие фразы из кино в одном месте</p>
+</section>
+
 <header>Мой сайт By uglyfacekid</header>
 
 <div class="tabs">
@@ -117,18 +134,19 @@
     </div>
 </div>
 
-<input
-        type="text"
-        id="search"
-        placeholder="Поиск цитаты..."
-        oninput="searchQuotes()"
-        style="padding:10px; width:80%; border-radius:10px; border:none;"
->
-
 <!-- Цитаты -->
 <div id="quotes" class="content">
     <div class="card">
+
         <h2>Цитаты из фильмов</h2>
+
+        <input
+                type="text"
+                id="search"
+                placeholder="Поиск цитаты..."
+                oninput="searchQuotes()"
+                style="padding:10px; width:80%; border-radius:10px; border:none;"
+        >
 
         <p id="quote">Нажми кнопку</p>
 
@@ -149,12 +167,6 @@
 <script src="script.js"></script>
 
 </body>
-
-<section class="hero">
-    <h1>Цитаты из фильмов</h1>
-    <p>Лучшие фразы из кино в одном месте</p>
-</section>
-
 </html>
 
 
